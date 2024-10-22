@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Menu CODEXA</title>
+</head>
+<body>
+    <div id="loader">
+        <img src="img/logo.png" alt="Loading..." id="loading-logo">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                const loader = document.getElementById('loader');
+                loader.style.opacity = '0';
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 800);
+            }, 3000); 
+        });
+    </script>
+    <header>
+        <a class="logo" href="#inicio" ><p id="codexa">CODEXA</p></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#nosotros" id="sobreNosotrosLink">Sobre nosotros</a></li>
+                <li><a href="#servicios" id="serviciosLink">Servicios</a></li>
+                <li><a href="#productos" id="productosLink">Productos</a></li>
+                <li><a href="#contacto" class="contactoL" id="contactoLink">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="#contacto"><button class="contact-button">Contacto</button></a>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <h1 class="titulo">Desarrollamos tú mañana, hoy.</h1>
+    </section>
+    
+    <section id="nosotros" class="nosotros">
+        <h1 class="titulo2">Nuestro Equipo</h1>
+    
+        <div class="equipo-containerInt">
+            <div class="equipo-imagen">
+                <img src="img/fotoCara.png" alt="Foto de Sebastian Neves">
+            </div>
+            <div class="equipo-texto">
+                <h1>Lorenzo Mello</h1>
+                <p>
+                    Soy el PM del equipo, me encargo de la planificación y organización de los proyectos. Me gusta trabajar en equipo y siempre busco la mejor solución para cada situación.
+                </p>
+            </div>
+        </div>
+
+        <div class="equipo-containerVar">
+            <div class="equipo-texto">
+                <h1>Sebastián Neves</h1>
+                <p>
+                    Soy el Developer del equipo, me encargo de la programación y desarrollo de los proyectos. Siempre busco la mejor solución a la hora de resolver cada situación que se me presenta.
+                </p>
+            </div>
+            <div class="equipo-imagen">
+                <img src="img/fotoCara.png" alt="Foto de Sebastian Neves">
+            </div>
+        </div>
+
+        <div class="equipo-containerInt">
+            <div class="equipo-imagen">
+                <img src="img/fotoCara.png" alt="Foto de Sebastian Neves">
+            </div>
+            <div class="equipo-texto">
+                <h1>Santiago García</h1>
+                <p>
+                    Soy el Diseñador Web del equipo, me encargo de la creación de la interfaz de usuario y la experiencia de usuario de los proyectos. Soy muy perfeccionista cuando se trata de diseño, ya que aseguro que los usarios tengan una buena experiencia.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="equipo-containerVar">
+            <div class="equipo-texto">
+                <h1>Joaquín Valdez</h1>
+                <p>
+                    Soy el Desarrolador web del equipo, me encargo de codificar y programar todas las interfaces. Ademas, aporto mis opiniones en los diseños de interfaces. Los diseños deben ser perfectos, imperfeccion es igual a fracaso, y CODEXA siempre triunfa.
+                </p>
+            </div>
+            <div class="equipo-imagen">
+                <img src="img/fotoCara.png" alt="Foto de Sebastian Neves">
+            </div>
+        </div>
+    </section>
+    
+    <section class="visionYmision">
+        <h1 class="titulo2">Lo que queremos trasmitir...</h1>
+
+        <div class="lema">
+            <p>Nosotros queremos resolver su situación de manera tranquila, 
+            para abordar todos los problemas que poseen de la manera más profesional.
+        </p>
+        </div>
+
+        <div class="viymi">
+            <div class="vision v">
+                <h1>NUESTRA VISION</h1>
+                <p>Nuestra visión como empresa es ser sinónimos de compromiso y seriedad 
+                    generando confianza y reconocimiento en el mercado, acompañando a 
+                    nuestros clientes en sus proyectos. 
+                </p>
+            </div>
+            <div class="mision m">
+                <h1>NUESTRA MISION</h1>
+                <p>
+                    Nuestra misión como empresa de software es ofrecer aplicaciones digitales 
+                    con el fin de mejorar la organización y gestión brindando soluciones innovadoras. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicios" id="servicios">
+        <h1 class="titulo2">Nuestros Servicios</h1>
+        <div class="slider">
+            <div class="arrow left-arrow">&#9664;</div> <!-- Flecha izquierda -->
+            <div class="slide active">
+                <div class="slide-text" >
+                    <h1>Mantenimiento de dispositivos</h1>
+                    <p>Ofrecemos un servicio de mantenimiento de dispositivos que incluye limpieza, actualizaciones y reparaciones. Nos aseguramos de que tus equipos funcionen de manera óptima y prolonguen su vida útil.
+                    </p>
+                </div>
+                <div class="slide-image">
+                    <img src="img/servicio1.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                    <h1>Desarrollo de Página Web</h1>
+                    <p>
+                        Desarrollamos páginas web a medida y totalmente responsive, con un diseño moderno y atractivo, con el fin de que su empresa tenga una buena presencia en internet. 
+                    </p>
+                </div>
+                <div class="slide-image">
+                    <img src="img/servicio2.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                    <h1>Creación de BD</h1>
+                    <p>
+                        Ofrecemos un servicio de creación de bases de datos personalizadas para optimizar la gestión de tu información. Nos encargamos del diseño, implementación y mantenimiento, asegurando que tus datos estén organizados y accesibles de manera eficiente.
+                    </p>
+                </div>
+                <div class="slide-image">
+                    <img src="img/servicio3.png" alt="">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                    <h1>Gestión de redes sociales</h1>
+                    <p>
+                        Ofrecemos un servicio de creación de bases de datos personalizadas para optimizar la gestión de tu información. Nos encargamos del diseño, implementación y mantenimiento, asegurando que tus datos estén organizados y accesibles de manera eficiente.
+                    </p>
+                </div>
+                <div class="slide-image">
+                    <img src="img/servicio4.png" alt="">
+                </div>
+            </div>
+            <div class="arrow right-arrow">&#9654;</div> <!-- Flecha derecha -->
+        </div>
+
+    </section>
+
+
+    <section class="services" id="productos">
+        <h1 class="titulo2">Nuestros Productos</h1>
+        <div class="services-slider">
+            <div class="services-arrow services-left-arrow">&#9664;</div> <!-- Flecha izquierda -->
+            <div class="services-slide active">
+                <div class="services-slide-text">
+                    <h1>Taza CODEXA</h1>
+                    <p>
+                        Taza de cerámica con el logo de CODEXA. Ideal para tomar café o té. Apta para microondas y lavavajillas. Capacidad de 300 ml. Disfrutala en tu hogar o en la oficina. Para regalar o regalarte.
+                    </p>
+                </div>
+                <div class="services-slide-image">
+                    <img src="img/producto1.png" alt="Producto 1">
+                </div>
+            </div>
+            <div class="services-slide">
+                <div class="services-slide-text">
+                    <h1>Peluche de Tortuga CODEXA</h1>
+                    <p>
+                        Un Peluche super suave y tierno, ideal para regalar a tus seres queridos. Apto para todas las edades. Dos tipos de peluches, una tortuga enojada y otra muy feliz.
+                    </p>
+                </div>
+                <div class="services-slide-image">
+                    <img src="img/producto2.png" alt="Producto 2">
+                </div>
+            </div>
+            <div class="services-slide">
+                <div class="services-slide-text">
+                    <h1>Pegatinas del Logo CODEXA</h1>
+                    <p>
+                        Pegatinas de vinilo con el logo de CODEXA. Ideales para pegar en tu notebook, celular, auto, moto, bicicleta, etc.
+                    </p>
+                </div>
+                <div class="services-slide-image">
+                    <img src="img/producto3.png" alt="Producto 3">
+                </div>
+            </div>
+            <div class="services-slide">
+                <div class="services-slide-text">
+                    <h1>Remera Negra CODEXA</h1>
+                    <p>
+                        Remera de algodón con el logo de CODEXA. Ideal para usar en cualquier ocasión. Disponible en todos los talles, tanto para hombres como para mujeres.
+                    </p>
+                </div>
+                <div class="services-slide-image">
+                    <img src="img/producto4.png" alt="Producto 4">
+                </div>
+            </div>
+            <div class="services-arrow services-right-arrow">&#9654;</div> <!-- Flecha derecha -->
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+
+        <h1 class="titulo2">¡CONTACTANOS!</h1>
+        <div>
+            <div>
+        <form action="" method="post">
+            <div class="campo">
+                <label>Nombre</label>
+                <input type="text" name="nombre">
+            </div>
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="campo">
+                
+                <label>Mensaje</label>
+                <textarea name="mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="imagess">
+        <img src="img/logo.png" alt="">
+    </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>contacto.condexa@gmail.com</p>
+        <a href="https://www.instagram.com/codexa._/" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loader = document.getElementById('loader');
+          loader.style.display = 'none';
+        }, 5000);
+      });
+      
+      </script>
+
+    <script src="js/servicios.js"></script>
+    <script src="js/nosotros.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem; /* Base para escalado */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #023762;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 2vw;
+}
+
+.menu a {
+    color: black;
+    transition: color 0.3s;
+    font-size: 3vh;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+.contact-button {
+    background-color: #2B5B82;
+    color: #CDEEFF;
+    border-radius: 0.5rem;
+    padding: 2vh 7vh;
+    transition: background-color 0.3s;
+    justify-content: flex-end;
+    border: none;
+    font-size: 18px;
+}
+
+.contact-button:hover {
+    background-color: #1A3B5D;
+}
+
+/* Add these styles for responsiveness */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.contactoL {
+    display: none;
+}
+
+/* Media query for screens less than 1000px */
+@media (max-width:1024px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 9vh; /* Adjust based on header height */
+        right: 0;
+        width: 30%; /* Adjust width as needed */
+        background-color: #005194;
+        padding: 1vh;
+    }
+
+    .contactoL {
+        display: block;
+    }
+
+    .menu a {
+        color: white;
+        font-size: 3vh;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .contact-button {
+        display: none;
+    }
+}
